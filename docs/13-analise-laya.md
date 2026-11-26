@@ -79,9 +79,9 @@ Ver [pendências do projeto](../tasks/current.md) e [roteiro do piloto](12-pilot
 
 Endereços conferidos em 21/09/2026. Estas referências complementam a análise local acima; os benchmarks publicados por terceiros nêo passam a ser resultados do nosso projeto.
 
-- [Laya INEMA](https://github.com/inematds/laya): repositório da nossa adaptaçêo. Consulte seu README para o estado publicado mais recente; a análise acima registra a árvore local no momento da inspeçêo.
+- [Laya ARCKHÉ](https://github.com/linnoff88-dev/laya): repositório da nossa adaptaçêo. Consulte seu README para o estado publicado mais recente; a análise acima registra a árvore local no momento da inspeçêo.
 - [Código original do Laya](https://github.com/NandhaKishorM/laya): implementaçêo de origem, Router, exemplos e pesquisa.
 - [Model card e arquivos dos modelos](https://huggingface.co/convaiinnovations/laya): família de checkpoints, instruções e limitações declaradas pelo fornecedor.
-- [Laya na área Jev do Eventos](https://eventos.inema.pro/jev/#laya): resumo do papel proposto, evidências e próximos passos.
+- [Laya na área Jev do Eventos](https://eventos.ARCKHÉ.pro/jev/#laya): resumo do papel proposto, evidências e próximos passos.
 
 O próprio model card informa que os números Jev usados em sua comparaçêo vêm de terceiros, com prompts e amostras diferentes. Portanto, essa tabela nêo substitui a comparaçêo controlada proposta neste documento.

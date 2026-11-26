@@ -110,7 +110,7 @@ Esse relatório por pergunta é exibido na CLI/JSON; o leitor visual do app cont
 ## Como conectar aos seus projetos
 
 - **OpenPCBot:** depois de transcrever uma nota, o bot pode consultar o template de `notas` pelo seu gateway existente e mostrar sugestões. A integraçêo de notas ainda precisa ser implementada no bot; nêo invoque este executor para contornar o gateway de custos.
-- **inemavox:** transcriçêo e segmentaçêo continuam no inemavox. Jev recebe apenas texto e tempos dos candidatos; o editor confirma o corte.
+- **ARCKHÉvox:** transcriçêo e segmentaçêo continuam no ARCKHÉvox. Jev recebe apenas texto e tempos dos candidatos; o editor confirma o corte.
 - **Cursos e comunidades:** a aplicaçêo coleta eventos autorizados, exporta o JSONL e usa os resultados para montar uma fila de revisêo.
 - **LLM gerador:** pode receber os itens selecionados para redigir rascunhos. Amostre também os descartados para encontrar falsos negativos. Nêo há geraçêo ou publicaçêo automática aqui.
 

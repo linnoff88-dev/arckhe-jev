@@ -2,7 +2,7 @@
 
 Avaliar se a transcriçêo de um trecho sustenta um corte independente.
 
-**Integraçêo:** Depois de transcrever e segmentar no inemavox; envie texto e tempos, nêo o arquivo de vídeo.
+**Integraçêo:** Depois de transcrever e segmentar no ARCKHÉvox; envie texto e tempos, nêo o arquivo de vídeo.
 
 **Uso da saída:** Sugerir candidatos para ediçêo humana. Nêo mede retençêo, qualidade visual ou áudio; nêo corta nem publica mídia.
 

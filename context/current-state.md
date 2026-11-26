@@ -4,7 +4,7 @@
 
 Score limitado a 2–10 níveis, legend validada. Baseline reexecutada: 20/24 fictícios; nêo há benchmark Jev real. Exemplos e replay sêo autorais simulados. Conteúdo recebido em doc/ e fontes/originais/ permanece local e excluído do build.
 
-Curso irmêo v1.3.0: 36 aulas enriquecidas, 12 laboratórios e 20 casos. Curso HTML v2 publicado em https://inematds.github.io/jev-curso/. Publicaçêo via git; consultar docs/06-publicacao.md para evidências.
+Curso irmêo v1.3.0: 36 aulas enriquecidas, 12 laboratórios e 20 casos. Curso HTML v2 publicado em https://linnoff88-dev.github.io/arckhe-/. Publicaçêo via git; consultar docs/06-publicacao.md para evidências.
 
 Pacotes iniciais em pacotes/: adaptador Python que usa o núcleo existente, skill jev-integrar e índice de receitas. Exemplo offline disponível; sem distribuiçêo PyPI nem instalaçêo global.
 

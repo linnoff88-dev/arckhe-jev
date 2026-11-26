@@ -6,9 +6,9 @@
 
 **v1.8.1** · Un laboratorio para formular, probar y comparar decisiones de IA, con una interfaz sencilla y funciones avanzadas cuando las necesites.
 
-[Abrir laboratorio](https://inematds.github.io/jev/app/) · [Guía de uso](https://inematds.github.io/jev/guia/) · [Curso en portugués](https://inematds.github.io/jev-curso/)
+[Abrir laboratorio](https://linnoff88-dev.github.io/arckhe-/app/) · [Guía de uso](https://linnoff88-dev.github.io/arckhe-/guia/) · [Curso en portugués](https://linnoff88-dev.github.io/arckhe-/)
 
-[Acervo Jev en Eventos INEMA](https://eventos.inema.pro/jev/es/) — proyecto, curso y paquetes reunidos en una página, con presentación en portugués, inglés y español.
+[Acervo Jev en Eventos ARCKHÉ](https://eventos.ARCKHÉ.pro/jev/es/) — proyecto, curso y paquetes reunidos en una página, con presentación en portugués, inglés y español.
 
 Este README está traducido al español. La interfaz, la documentación enlazada del proyecto, el curso y el contenido de los ejemplos siguen en portugués. Los comandos, las rutas y los identificadores conservan su escritura original para que puedas ejecutarlos tal como aparecen.
 
@@ -48,7 +48,7 @@ Los diez paquetes originales se probaron con inferencia real: diez respuestas si
 - **Claude Code:** `/jev-decidir` seguido del contexto y las alternativas.
 - **openpcbotv3:** `/jev observar` compara ruta, agente y skill; `/jev` muestra el resultado y `/jev off` desactiva la observación. Integración nativa mediante el gateway, con control del presupuesto y registro de costes.
 
-[Instalación y ejemplos de la skill](pacotes/skills/jev-decidir/README.md) · [Integración en el bot](https://github.com/inematds/openpcbotv3/blob/main/docs/JEV.md). La consulta directa usa el cliente de este repositorio; el bot conserva su propio gateway y enrutador, con Jev en modo de observación.
+[Instalación y ejemplos de la skill](pacotes/skills/jev-decidir/README.md) · [Integración en el bot](https://github.com/linnoff88-dev/openpcbotv3/blob/main/docs/JEV.md). La consulta directa usa el cliente de este repositorio; el bot conserva su propio gateway y enrutador, con Jev en modo de observación.
 
 ## Empieza en un minuto
 
@@ -57,7 +57,7 @@ En el sitio público, elige uno de los **20 casos originales**, examina el conte
 Para abrirlo en tu ordenador:
 
 ```bash
-git clone https://github.com/inematds/jev.git
+git clone https://github.com/linnoff88-dev/jev.git
 cd jev
 python3 -m jev_lab serve
 ```
@@ -136,7 +136,7 @@ El servidor escucha únicamente en loopback, valida el origen y sirve archivos p
 - [Qué se incorporó y qué depende de evidencia](docs/09-evolucao.md)
 - [Análisis conceptual](docs/01-analise.md) · [Diez aplicaciones iniciales](docs/02-aplicacoes.md)
 - [Plan original](docs/03-plano-aplicacao.md) · [Protocolo de evaluación](docs/04-avaliacao.md) · [Costes](docs/05-custos.md)
-- [Curso: 36 lecciones y 12 laboratorios](https://inematds.github.io/jev-curso/)
+- [Curso: 36 lecciones y 12 laboratorios](https://linnoff88-dev.github.io/arckhe-/)
 - [Modelos oficiales](https://docs.typesafe.ai/models) · [API oficial](https://docs.typesafe.ai/api)
 
 ## Desarrollo y publicación
@@ -152,7 +152,7 @@ Las pruebas de navegador de `tests/browser.cjs` utilizan Playwright solo durante
 
 ## Plan del piloto y puntuación compuesta
 
-[Planifica una decisión, define casos límite y combina rúbricas Score](docs/12-piloto-e-composicao.md) (portugués). `pacotes.composicao.compor` valida los datos y calcula un índice ponderado; no representa confianza ni autorización. El [curso HTML v2](https://inematds.github.io/jev-curso/) ofrece 36 lecciones, progreso y un plan personal (portugués).
+[Planifica una decisión, define casos límite y combina rúbricas Score](docs/12-piloto-e-composicao.md) (portugués). `pacotes.composicao.compor` valida los datos y calcula un índice ponderado; no representa confianza ni autorización. El [curso HTML v2](https://linnoff88-dev.github.io/arckhe-/) ofrece 36 lecciones, progreso y un plan personal (portugués).
 
 ## Pendientes y alternativa local
 
@@ -162,4 +162,4 @@ Las pruebas de navegador de `tests/browser.cjs` utilizan Playwright solo durante
 
 Laya es un candidato local para un piloto comparativo. El análisis y las referencias están disponibles; el adaptador de Jev y la integración con el bot siguen pendientes.
 
-[Laya INEMA](https://github.com/inematds/laya) · [Código original](https://github.com/NandhaKishorM/laya) · [Modelos y ficha del modelo](https://huggingface.co/convaiinnovations/laya) · [Laya en Eventos](https://eventos.inema.pro/jev/#laya)
+[Laya ARCKHÉ](https://github.com/linnoff88-dev/laya) · [Código original](https://github.com/NandhaKishorM/laya) · [Modelos y ficha del modelo](https://huggingface.co/convaiinnovations/laya) · [Laya en Eventos](https://eventos.ARCKHÉ.pro/jev/#laya)

@@ -1,5 +1,5 @@
 ---
-name: Jev Decision Lab — INEMA
+name: Jev Decision Lab — ARCKHÉ
 description: Laboratório educacional e guia de uso em dark âmbar com tema claro alternativo.
 colors:
   app-bg: "#101217"
@@ -107,7 +107,7 @@ components:
 
 ## Overview
 
-O mundo visual estabelecido é o padrêo INEMA dark âmbar, com tema claro alternativo e identificaçêo INEMA.CLUB em azul. Esta documentaçêo registra o código existente em `app/app.css`, `app/index.html` e `guia/index.html`; nêo representa aprovaçêo estética de uma proposta nova.
+O mundo visual estabelecido é o padrêo ARCKHÉ dark âmbar, com tema claro alternativo e identificaçêo ARCKHÉ AI em azul. Esta documentaçêo registra o código existente em `app/app.css`, `app/index.html` e `guia/index.html`; nêo representa aprovaçêo estética de uma proposta nova.
 
 O aplicativo usa o modo **Operate**: navegaçêo por casos, ediçêo e resultado na mesma área de trabalho. O guia usa **Read/Persuade**: apresentaçêo ilustrada, explicaçêo e passos de instalaçêo. Essa diferença de composiçêo preserva a identidade compartilhada sem substituir o template do guia pela interface operacional.
 
@@ -118,7 +118,7 @@ Características recorrentes: fundos escuros, superfícies delimitadas por borda
 O frontmatter contém os valores normativos extraídos, separados por superfície e tema. No CSS, a classe `light` no `body` troca os papéis sem mudar a estrutura.
 
 - **Primária:** âmbar orienta ações, links e destaques. No app, o botêo principal troca fundo e texto no tema claro. No guia, o preenchimento dos botões e números dos passos conserva o âmbar original através de `--amb-fill`, enquanto links usam o âmbar escuro do tema claro.
-- **Secundária:** azul identifica INEMA.CLUB. O link PRO tem cor própria no guia.
+- **Secundária:** azul identifica ARCKHÉ AI. O link PRO tem cor própria no guia.
 - **Neutras:** fundo, painel/cartêo, texto, texto secundário e bordas têm tokens distintos. O guia acrescenta uma segunda superfície de fundo.
 
 A última declaraçêo de âmbar claro no guia é a efetiva; preservar a cascata ao editar. Nêo inferir estados de erro ou sucesso pela cor: a interface informa estados com texto.
@@ -167,4 +167,4 @@ Acessibilidade presente: idioma pt-BR, títulos estruturados, rótulos, texto al
 - **Do** manter foco visível, rótulos, seleçêo programática e anúncios de status.
 - **Don't** transformar exemplos ou barras simuladas em evidência de benchmark real.
 - **Don't** depender apenas de cor para explicar o estado ou a decisêo.
-- **Don't** substituir a identidade INEMA, introduzir componentes inexistentes como regras consolidadas ou tratar esta extraçêo como aprovaçêo estética.
+- **Don't** substituir a identidade ARCKHÉ, introduzir componentes inexistentes como regras consolidadas ou tratar esta extraçêo como aprovaçêo estética.

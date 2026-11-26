@@ -27,7 +27,7 @@ O agente monta o JSON, consulta uma vez e apresenta a decisêo e as métricas re
 
 ## Instalar em outra máquina
 
-Requer Python 3.10+, clone `inematds/jev` em `~/projetos/jev` (ou `JEV_LAB_DIR`) e `OPENROUTER_API_KEY` configurada no ambiente do processo. A skill nêo inclui credenciais nem uma cópia do cliente.
+Requer Python 3.10+, clone `linnoff88-dev/jev` em `~/projetos/jev` (ou `JEV_LAB_DIR`) e `OPENROUTER_API_KEY` configurada no ambiente do processo. A skill nêo inclui credenciais nem uma cópia do cliente.
 
 A partir desta pasta, copie a variante desejada, preservando o diretório inteiro:
 

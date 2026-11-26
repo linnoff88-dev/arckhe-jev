@@ -17,7 +17,7 @@ Explorar vinte casos, editar contexto e requisições, compreender revisêo e ca
 No Pages: exemplos fictícios sem inferência. Localmente: cliente HTTP com chave apenas no servidor; CLI de experimentos com regras, Jev, híbrido e replay; comparaçêo e leitura de relatórios.
 
 ## Brand Commitments
-Padrêo INEMA dark/âmbar, tema claro alternativo e links INEMA.CLUB/PRO; guia baseado no template existente.
+Padrêo ARCKHÉ dark/âmbar, tema claro alternativo e links ARCKHÉ AI/PRO; guia baseado no template existente.
 
 ## Capabilities and Constraints
 Sem diagnóstico, decisões jurídicas, transações ou mensagens externas. Sem chave Jev disponível na sessêo. Dados do usuário nunca publicados.

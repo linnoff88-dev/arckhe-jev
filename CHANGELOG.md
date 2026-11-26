@@ -8,7 +8,7 @@
 
 ## Documentaçêo — 2026-09-21
 
-- Referências Laya INEMA, código original e model card nos READMEs, análise e guia.
+- Referências Laya ARCKHÉ, código original e model card nos READMEs, análise e guia.
 - Resumo da avaliaçêo local e do piloto proposto, sem anunciar integraçêo operacional.
 
 ## v1.7.1 — 2026-09-20
@@ -20,7 +20,7 @@
 
 ## Documentaçêo do ecossistema — 2026-09-19
 
-- Vincula o acervo Eventos INEMA nos três idiomas e registra o curso irmêo v1.3.0.
+- Vincula o acervo Eventos ARCKHÉ nos três idiomas e registra o curso irmêo v1.3.0.
 
 ## v1.6.1 — 2026-09-19
 
@@ -68,7 +68,7 @@
 
 - Laboratório de dez casos, editor e calculadora.
 - Cliente Python, servidor local, validaçêo e baseline em lote.
-- Guia INEMA, capa, testes e publicaçêo Pages por build com lista explícita.
+- Guia ARCKHÉ, capa, testes e publicaçêo Pages por build com lista explícita.
 
 ## v1.0.0 — 2026-09-18
 

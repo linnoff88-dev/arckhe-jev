@@ -6,9 +6,9 @@
 
 **v1.8.1** · A lab for defining, testing and comparing AI decisions, with a simple interface and advanced features when you need them.
 
-[Open the lab](https://inematds.github.io/jev/app/) · [User guide](https://inematds.github.io/jev/guia/) · [Course in Portuguese](https://inematds.github.io/jev-curso/)
+[Open the lab](https://linnoff88-dev.github.io/arckhe-/app/) · [User guide](https://linnoff88-dev.github.io/arckhe-/guia/) · [Course in Portuguese](https://linnoff88-dev.github.io/arckhe-/)
 
-[Jev collection at INEMA Events](https://eventos.inema.pro/jev/en/) — project, course and packages together on one page, presented in Portuguese, English and Spanish.
+[Jev collection at ARCKHÉ Events](https://eventos.ARCKHÉ.pro/jev/en/) — project, course and packages together on one page, presented in Portuguese, English and Spanish.
 
 This README is translated into English. The interface, linked project documentation, course and example content remain in Portuguese. Commands, paths and identifiers below retain their original spelling so you can run them as written.
 
@@ -48,7 +48,7 @@ The original ten packages were tested with real inference: ten successful respon
 - **Claude Code:** `/jev-decidir` followed by the context and alternatives.
 - **openpcbotv3:** `/jev observar` compares route, agent and skill; `/jev` shows the result and `/jev off` disables observation. Native integration through the gateway, with budget checks and recorded costs.
 
-[Skill installation and examples](pacotes/skills/jev-decidir/README.md) · [Bot integration](https://github.com/inematds/openpcbotv3/blob/main/docs/JEV.md). Direct queries use this repository's client; the bot retains its own gateway and router, with Jev operating in observation mode.
+[Skill installation and examples](pacotes/skills/jev-decidir/README.md) · [Bot integration](https://github.com/linnoff88-dev/openpcbotv3/blob/main/docs/JEV.md). Direct queries use this repository's client; the bot retains its own gateway and router, with Jev operating in observation mode.
 
 ## Get started in one minute
 
@@ -57,7 +57,7 @@ On the public site, choose one of **20 original cases**, inspect the context and
 To run it on your computer:
 
 ```bash
-git clone https://github.com/inematds/jev.git
+git clone https://github.com/linnoff88-dev/jev.git
 cd jev
 python3 -m jev_lab serve
 ```
@@ -136,7 +136,7 @@ The server listens only on loopback, validates origins and serves allowlisted fi
 - [What was added and what still needs evidence](docs/09-evolucao.md)
 - [Conceptual analysis](docs/01-analise.md) · [Ten initial applications](docs/02-aplicacoes.md)
 - [Original plan](docs/03-plano-aplicacao.md) · [Evaluation protocol](docs/04-avaliacao.md) · [Costs](docs/05-custos.md)
-- [Course: 36 lessons and 12 labs](https://inematds.github.io/jev-curso/)
+- [Course: 36 lessons and 12 labs](https://linnoff88-dev.github.io/arckhe-/)
 - [Official models](https://docs.typesafe.ai/models) · [Official API](https://docs.typesafe.ai/api)
 
 ## Development and publication
@@ -152,7 +152,7 @@ Browser tests in `tests/browser.cjs` use Playwright only during development. Ins
 
 ## Pilot worksheet and composite scoring
 
-[Plan one decision, write boundary cases and combine Score rubrics](docs/12-piloto-e-composicao.md) (Portuguese). `pacotes.composicao.compor` validates the data and computes a weighted index; it is neither confidence nor authorization. The [HTML v2 course](https://inematds.github.io/jev-curso/) offers 36 lessons, progress tracking and a personal worksheet (Portuguese).
+[Plan one decision, write boundary cases and combine Score rubrics](docs/12-piloto-e-composicao.md) (Portuguese). `pacotes.composicao.compor` validates the data and computes a weighted index; it is neither confidence nor authorization. The [HTML v2 course](https://linnoff88-dev.github.io/arckhe-/) offers 36 lessons, progress tracking and a personal worksheet (Portuguese).
 
 ## Pending work and local alternative
 
@@ -162,4 +162,4 @@ Browser tests in `tests/browser.cjs` use Playwright only during development. Ins
 
 Laya is a local candidate for a comparative pilot. Analysis and references are available; the Jev adapter and bot integration remain pending.
 
-[Laya INEMA](https://github.com/inematds/laya) · [Upstream code](https://github.com/NandhaKishorM/laya) · [Models and model card](https://huggingface.co/convaiinnovations/laya) · [Laya on Eventos](https://eventos.inema.pro/jev/#laya)
+[Laya ARCKHÉ](https://github.com/linnoff88-dev/laya) · [Upstream code](https://github.com/NandhaKishorM/laya) · [Models and model card](https://huggingface.co/convaiinnovations/laya) · [Laya on Eventos](https://eventos.ARCKHÉ.pro/jev/#laya)

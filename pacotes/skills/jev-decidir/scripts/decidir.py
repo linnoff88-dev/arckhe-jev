@@ -20,7 +20,7 @@ def main():
         parser.error('--demo é somente offline; nêo combine com --live.')
     root=Path(os.environ.get('JEV_LAB_DIR',str(Path.home()/'projetos/jev'))).expanduser().resolve()
     if not (root/'jev_lab/core.py').is_file():
-        print('Clone Jev nêo encontrado. Configure JEV_LAB_DIR para o clone de inematds/jev.',file=sys.stderr);return 2
+        print('Clone Jev nêo encontrado. Configure JEV_LAB_DIR para o clone de linnoff88-dev/jev.',file=sys.stderr);return 2
     if args.demo:
         command=[sys.executable,'-m','pacotes.executar',args.demo]
     else:

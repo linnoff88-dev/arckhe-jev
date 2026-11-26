@@ -22,7 +22,7 @@ Escolha um dos [18 pacotes](areas/README.md). Mantenha critérios explícitos e 
 Mantenha um clone deste repo e acrescente seu caminho ao `PYTHONPATH` do processo, ou copie `jev_lab/` e `pacotes/` para o seu projeto preservando a estrutura. Prefira fixar um commit para atualizações revisáveis.
 
 ```bash
-git clone https://github.com/inematds/jev.git
+git clone https://github.com/linnoff88-dev/jev.git
 cd jev
 python3 -m pacotes.executar atendimento
 ```

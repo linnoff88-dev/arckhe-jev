@@ -17,10 +17,10 @@ Prioridades sêo propostas para este projeto, nêo resultados medidos. P0 = pilo
 
 Casos 3, 9 e 10 serêo exercícios com dados fictícios. Uma eventual aplicaçêo real exige projeto próprio de validaçêo e responsáveis do domínio; nêo faz parte deste piloto.
 
-## Oportunidades no ecossistema INEMA
+## Oportunidades no ecossistema ARCKHÉ
 
 - **Atendimento da comunidade:** aplicar o caso 2 a dúvidas de acesso, conteúdo, cobrança e contato comercial. Entrada inicial por arquivo; integrações somente após evidência.
-- **Transcrições do inemavox:** combinar “houve agendamento?”, “houve interesse comercial?” e “faltam dados?” em perguntas separadas; mais de uma rota pode ser ativada.
+- **Transcrições do ARCKHÉvox:** combinar “houve agendamento?”, “houve interesse comercial?” e “faltam dados?” em perguntas separadas; mais de uma rota pode ser ativada.
 - **Qualidade editorial de cursos:** avaliar se uma afirmaçêo está apoiada pelo material de referência; links, cálculos e presença de seções continuam verificados em código.
 - **Gestêo de agentes / LOOP-R:** usar julgamentos estreitos em observar e rotear. Alterações de memória, políticas e ferramentas precisam de processo próprio; nêo promover uma hipótese do modelo a regra permanente automaticamente.
 

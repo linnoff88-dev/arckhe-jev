@@ -44,4 +44,4 @@ A referência educacional [jev.teachme.love](https://jev.teachme.love/) motivou 
 
 Na consulta de 20/09/2026, a página inicial descrevia 40 chamadas reais, mas a primeira aula descrevia transcrições sintéticas. Nêo adotamos esse conjunto nem seus números como validaçêo do projeto. Acerto por etiqueta e acerto de todas as etiquetas de uma chamada têm denominadores diferentes; 39/40 e 92,5% nêo sêo, por si só, uma contradiçêo. Demonstrações de alteraçêo de critério precisam de nova execuçêo e teste independente para comprovar melhoria.
 
-O curso HTML v2 aplica este roteiro em [Jev na prática](https://inematds.github.io/jev-curso/). Progresso e atividades sêo locais ao navegador; nenhum exercício chama API ou usa créditos de terceiros.
+O curso HTML v2 aplica este roteiro em [Jev na prática](https://linnoff88-dev.github.io/arckhe-/). Progresso e atividades sêo locais ao navegador; nenhum exercício chama API ou usa créditos de terceiros.

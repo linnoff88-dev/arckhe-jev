@@ -11,7 +11,7 @@
     "frase_destacavel": true,
     "clareza_textual": 2
   },
-  "integration_point": "Depois de transcrever e segmentar no inemavox; envie texto e tempos, nêo o arquivo de vídeo.",
+  "integration_point": "Depois de transcrever e segmentar no ARCKHÉvox; envie texto e tempos, nêo o arquivo de vídeo.",
   "suggested_use": "Sugerir candidatos para ediçêo humana. Nêo mede retençêo, qualidade visual ou áudio; nêo corta nem publica mídia.",
   "fixture_origin": "simulation",
   "fixture_request_sha256": "54ecaf93eed9694a6a20ef61564b73253b062da1efff2c05e43368a9ab97dfdc"

@@ -6,9 +6,9 @@
 
 **v1.8.1** êÂ· Um laboratêÂ³rio para formular, testar e comparar decisêÂµes de IA, com uma interface simples e recursos avanêÂ§ados quando vocêÂª precisar.
 
-[Abrir laboratêÂ³rio](https://inematds.github.io/jev/app/) êÂ· [Guia de uso](https://inematds.github.io/jev/guia/) êÂ· [Curso em portuguêÂªs](https://inematds.github.io/jev-curso/)
+[Abrir laboratêÂ³rio](https://linnoff88-dev.github.io/arckhe-/app/) êÂ· [Guia de uso](https://linnoff88-dev.github.io/arckhe-/guia/) êÂ· [Curso em portuguêÂªs](https://linnoff88-dev.github.io/arckhe-/)
 
-[Acervo Jev no Eventos INEMA](https://eventos.inema.pro/jev/) ê¢â¬â projeto, curso e pacotes reunidos em uma pêÂ¡gina, com apresentaêÂ§êÂ£o em portuguêÂªs, inglêÂªs e espanhol.
+[Acervo Jev no Eventos ARCKHÉ](https://eventos.ARCKHÉ.pro/jev/) ê¢â¬â projeto, curso e pacotes reunidos em uma pêÂ¡gina, com apresentaêÂ§êÂ£o em portuguêÂªs, inglêÂªs e espanhol.
 
 **ReferêÂªncia oficial de modelos, preêÂ§os, modalidades e limites:** https://docs.typesafe.ai/models
 
@@ -46,13 +46,13 @@ Os dez pacotes originais foram testados com inferêÂªncia real: dez resposta
 - **Claude Code:** `/jev-decidir` seguido do contexto e das alternativas.
 - **openpcbotv3:** `/jev observar` compara rota, agente e skill; `/jev` mostra o resultado, `/jev off` desliga. IntegraêÂ§êÂ£o nativa via gateway, com orêÂ§amento e custos registrados.
 
-[InstalaêÂ§êÂ£o e exemplos da skill](pacotes/skills/jev-decidir/README.md) êÂ· [IntegraêÂ§êÂ£o no bot](https://github.com/inematds/openpcbotv3/blob/main/docs/JEV.md). A consulta direta usa o cliente deste repo; o bot conserva seu prêÂ³prio gateway e seu roteador em modo de observaêÂ§êÂ£o.
+[InstalaêÂ§êÂ£o e exemplos da skill](pacotes/skills/jev-decidir/README.md) êÂ· [IntegraêÂ§êÂ£o no bot](https://github.com/linnoff88-dev/openpcbotv3/blob/main/docs/JEV.md). A consulta direta usa o cliente deste repo; o bot conserva seu prêÂ³prio gateway e seu roteador em modo de observaêÂ§êÂ£o.
 
 ## Uma porta sêÂ³ para as consultas: jev-gw
 
-Quando a consulta ao Jev sai de vêÂ¡rios pontos do mesmo sistema, o **[jev-gw](https://github.com/inematds/jev-gw)** concentra tudo numa porta: teto de gasto diêÂ¡rio conferido antes de cada consulta, cache por pedido idêÂªntico, registro de custo e latêÂªncia, e falha conservadora ê¢â¬â Jev fora do ar, chave errada ou teto estourado devolvem revisêÂ£o em vez de quebrar quem chamou. Biblioteca Python, serviêÂ§o HTTP e CLI, sêÂ³ biblioteca padrêÂ£o. Usa o cliente deste repositêÂ³rio, vendorizado.
+Quando a consulta ao Jev sai de vêÂ¡rios pontos do mesmo sistema, o **[jev-gw](https://github.com/linnoff88-dev/jev-gw)** concentra tudo numa porta: teto de gasto diêÂ¡rio conferido antes de cada consulta, cache por pedido idêÂªntico, registro de custo e latêÂªncia, e falha conservadora ê¢â¬â Jev fora do ar, chave errada ou teto estourado devolvem revisêÂ£o em vez de quebrar quem chamou. Biblioteca Python, serviêÂ§o HTTP e CLI, sêÂ³ biblioteca padrêÂ£o. Usa o cliente deste repositêÂ³rio, vendorizado.
 
-[Guia](https://inematds.github.io/jev-gw/guia/) êÂ· [Arquitetura](https://github.com/inematds/jev-gw/blob/main/ARQUITETURA.md)
+[Guia](https://linnoff88-dev.github.io/arckhe-/guia/) êÂ· [Arquitetura](https://github.com/linnoff88-dev/jev-gw/blob/main/ARQUITETURA.md)
 
 ## Comece em um minuto
 
@@ -61,7 +61,7 @@ No site pêÂºblico, escolha um dos **20 casos autorais**, examine contexto e
 Para abrir no computador:
 
 ```bash
-git clone https://github.com/inematds/jev.git
+git clone https://github.com/linnoff88-dev/jev.git
 cd jev
 python3 -m jev_lab serve
 ```
@@ -141,7 +141,7 @@ O servidor escuta somente loopback, valida origem e serve arquivos permitidos. S
 - [O que foi agregado e o que depende de evidêÂªncia](docs/09-evolucao.md)
 - [AnêÂ¡lise conceitual](docs/01-analise.md) êÂ· [Dez aplicaêÂ§êÂµes iniciais](docs/02-aplicacoes.md)
 - [Plano original](docs/03-plano-aplicacao.md) êÂ· [Protocolo de avaliaêÂ§êÂ£o](docs/04-avaliacao.md) êÂ· [Custos](docs/05-custos.md)
-- [Curso: 36 aulas e 12 laboratêÂ³rios](https://inematds.github.io/jev-curso/)
+- [Curso: 36 aulas e 12 laboratêÂ³rios](https://linnoff88-dev.github.io/arckhe-/)
 - [Modelos oficiais](https://docs.typesafe.ai/models) êÂ· [API oficial](https://docs.typesafe.ai/api)
 
 ## Desenvolvimento e publicaêÂ§êÂ£o
@@ -157,7 +157,7 @@ Os testes de navegador em `tests/browser.cjs` usam Playwright somente no desenvo
 
 ## Roteiro de piloto e composiêÂ§êÂ£o
 
-[Planeje uma decisêÂ£o, escreva casos de fronteira e combine rubricas Score](docs/12-piloto-e-composicao.md). A funêÂ§êÂ£o `pacotes.composicao.compor` valida os dados e calcula um êÂ­ndice ponderado; nêÂ£o representa confianêÂ§a nem autoriza aêÂ§êÂµes. [Curso HTML v2](https://inematds.github.io/jev-curso/) com 36 aulas, progresso e roteiro pessoal.
+[Planeje uma decisêÂ£o, escreva casos de fronteira e combine rubricas Score](docs/12-piloto-e-composicao.md). A funêÂ§êÂ£o `pacotes.composicao.compor` valida os dados e calcula um êÂ­ndice ponderado; nêÂ£o representa confianêÂ§a nem autoriza aêÂ§êÂµes. [Curso HTML v2](https://linnoff88-dev.github.io/arckhe-/) com 36 aulas, progresso e roteiro pessoal.
 
 ## PrêÂ³ximos passos e alternativa local
 
@@ -167,7 +167,7 @@ Os testes de navegador em `tests/browser.cjs` usam Playwright somente no desenvo
 
 Laya êÂ© um candidato local para o piloto comparativo. A anêÂ¡lise e as referêÂªncias jêÂ¡ estêÂ£o disponêÂ­veis; o adaptador no Jev e a integraêÂ§êÂ£o no bot continuam pendentes.
 
-[Laya INEMA](https://github.com/inematds/laya) êÂ· [CêÂ³digo original](https://github.com/NandhaKishorM/laya) êÂ· [Modelos e model card](https://huggingface.co/convaiinnovations/laya) êÂ· [Laya no Eventos](https://eventos.inema.pro/jev/#laya)
+[Laya ARCKHÉ](https://github.com/linnoff88-dev/laya) êÂ· [CêÂ³digo original](https://github.com/NandhaKishorM/laya) êÂ· [Modelos e model card](https://huggingface.co/convaiinnovations/laya) êÂ· [Laya no Eventos](https://eventos.ARCKHÉ.pro/jev/#laya)
 
 ---
 
