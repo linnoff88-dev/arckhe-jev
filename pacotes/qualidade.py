@@ -1,4 +1,4 @@
-"""Avaliação offline por pergunta: Choice, Noul e Score contra referência explícita."""
+"""Avaliaçêo offline por pergunta: Choice, Noul e Score contra referência explícita."""
 import argparse
 import json
 from pathlib import Path
@@ -33,7 +33,7 @@ def avaliar(request, records):
         current=dict(request,state=row.get('state'))
         validate_request(current)
         if row.get('request_sha256') != fingerprint(current):
-            raise LabError('Hash não corresponde à requisição avaliada.')
+            raise LabError('Hash nêo corresponde à requisiçêo avaliada.')
         if row.get('origin') not in ('simulation','measured'):
             raise LabError('Declare origin simulation ou measured.')
         try:
@@ -63,7 +63,7 @@ def avaliar(request, records):
         result[key]=metrics
     return {'schema_version':1,'origins':sorted({r['origin'] for r in records}),
             'count':len(records),'questions':result,
-            'note':'Referência fornecida pelo avaliador; origin não autentica procedência. Noul usa corte 0,5 somente para métrica. Erros reduzem cobertura e acurácia; MAE/Brier usam respostas válidas.'}
+            'note':'Referência fornecida pelo avaliador; origin nêo autentica procedência. Noul usa corte 0,5 somente para métrica. Erros reduzem cobertura e acurácia; MAE/Brier usam respostas válidas.'}
 
 
 def main():
@@ -81,14 +81,14 @@ def main():
             if fingerprint(request)!=meta['fixture_request_sha256']:
                 raise LabError('Fixture antiga: request alterado.')
             if 'expected_answers' not in meta:
-                raise LabError('Este pacote ainda não possui referência para todas as perguntas.')
+                raise LabError('Este pacote ainda nêo possui referência para todas as perguntas.')
             records=[{'id':'exemplo-ficticio','state':request['state'],
                       'request_sha256':fingerprint(request),'expected':meta['expected_answers'],
                       'origin':'simulation','response':json.loads((root/'fixture.json').read_text())}]
         result=avaliar(request,records)
         encoded=json.dumps(result,ensure_ascii=False,indent=2)+'\n'
         if args.out:
-            if args.input and args.out.resolve()==args.input.resolve():raise LabError('Saída não pode sobrescrever entrada.')
+            if args.input and args.out.resolve()==args.input.resolve():raise LabError('Saída nêo pode sobrescrever entrada.')
             args.out.parent.mkdir(parents=True,exist_ok=True)
             args.out.write_text(encoded,encoding='utf-8')
         print(encoded,end='')

@@ -50,7 +50,7 @@ class Cruzamento(unittest.TestCase):
     def test_failed_evaluation_refuses_matching(self):
         def fail(_): raise LabError('Prazo excedido')
         result = avaliar_area('viagens', self.request['state'], evaluator=fail)
-        with self.assertRaisesRegex(LabError, 'revisão'):
+        with self.assertRaisesRegex(LabError, 'revisêo'):
             cruzar(self.request, result, self.perfis)
 
     def test_input_is_not_mutated(self):

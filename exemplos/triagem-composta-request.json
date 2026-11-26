@@ -11,8 +11,8 @@
       "criteria": {
         "suporte": "Acesso ou problema técnico.",
         "cobranca": "Pagamentos e estornos.",
-        "vendas": "Nova contratação.",
-        "insuficiente": "Não dá para identificar."
+        "vendas": "Nova contrataçêo.",
+        "insuficiente": "Nêo dá para identificar."
       }
     },
     "estorno": {
@@ -21,7 +21,7 @@
     },
     "suficiente": {
       "type": "noul",
-      "instructions": "Há informação para sugerir a fila, sem executar estorno?"
+      "instructions": "Há informaçêo para sugerir a fila, sem executar estorno?"
     },
     "prioridade": {
       "type": "score",

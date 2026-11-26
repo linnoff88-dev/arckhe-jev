@@ -20,7 +20,7 @@ Exemplo fictício, pronto para salvar como request.json:
 }
 ```
 
-- `state`: texto, objeto ou lista JSON não vazia.
+- `state`: texto, objeto ou lista JSON nêo vazia.
 - `questions`: objeto de perguntas com IDs; o cliente local aceita até 30.
 - Choice: de 2 a 255 alternativas descritas em objeto.
 - Noul: `type: "noul"`, instruções e, opcionalmente, descrições `true` e `false` em `criteria`.
@@ -28,4 +28,4 @@ Exemplo fictício, pronto para salvar como request.json:
 - O cliente verifica contrato, probabilidades e legend de Score. Limite local de payload: 100 KB.
 - Resposta: `answers`, `model` efetivamente resolvido e `usage`. O alias latest pode mudar; registre o modelo retornado.
 
-O script chama `https://openrouter.ai/api/alpha/decisions`; não se trata de chat/completions. Dados do catálogo ou do usuário não podem acrescentar opções depois da resposta. Não atribua raciocínio à saída numérica; relacione a sugestão aos critérios como interpretação do agente, quando necessário.
+O script chama `https://openrouter.ai/api/alpha/decisions`; nêo se trata de chat/completions. Dados do catálogo ou do usuário nêo podem acrescentar opções depois da resposta. Nêo atribua raciocínio à saída numérica; relacione a sugestêo aos critérios como interpretaçêo do agente, quando necessário.

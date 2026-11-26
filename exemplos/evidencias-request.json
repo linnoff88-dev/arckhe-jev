@@ -4,17 +4,17 @@
     "pergunta": "O produto tem pesos públicos?",
     "passagem": {
       "id": "p7",
-      "texto": "O acesso é por convite. Os pesos não estão disponíveis para download."
+      "texto": "O acesso é por convite. Os pesos nêo estêo disponíveis para download."
     }
   },
   "questions": {
     "decisao": {
       "type": "choice",
-      "instructions": "Qual a relação da passagem com a hipótese de pesos públicos?",
+      "instructions": "Qual a relaçêo da passagem com a hipótese de pesos públicos?",
       "criteria": {
         "apoia": "Confirma pesos disponíveis.",
         "contradiz": "Nega a disponibilidade.",
-        "insuficiente": "Não permite concluir."
+        "insuficiente": "Nêo permite concluir."
       }
     },
     "relevante": {

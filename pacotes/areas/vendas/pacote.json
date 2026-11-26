@@ -5,7 +5,7 @@
   "sensitive": false,
   "expected": "demonstracao",
   "integration_point": "Acione após receber um formulário de contato. Acrescente ao contexto seu catálogo e critérios comerciais.",
-  "suggested_use": "Sugerir uma tarefa de demonstração no CRM; não enviar mensagens automaticamente.",
+  "suggested_use": "Sugerir uma tarefa de demonstraçêo no CRM; nêo enviar mensagens automaticamente.",
   "fixture_origin": "simulation",
   "fixture_request_sha256": "ab2d74f3e199ff33b4d380ed261c7567d341df6ecee0d93144c1163cb759a64b"
 }

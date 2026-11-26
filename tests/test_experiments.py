@@ -12,7 +12,7 @@ class Experiments(unittest.TestCase):
         self.data=self.root/'items.jsonl'
         self.data.write_text('\n'.join(json.dumps(x) for x in [
             {'id':'a','text':'Cobrança duplicada','label':'cobranca'},
-            {'id':'b','text':'Não sei quem resolve isso','label':'insuficiente'}]))
+            {'id':'b','text':'Nêo sei quem resolve isso','label':'insuficiente'}]))
     def result(self,payload):
         options=payload['questions']['decisao']['criteria']
         return {'model':'modelo-controlado','answers':{'decisao':{'type':'choice','choice':'cobranca',

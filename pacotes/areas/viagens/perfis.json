@@ -1,6 +1,6 @@
 {
   "origin": "simulation",
-  "note": "Doze perfis fictícios. Orçamento e preço são dados estruturados do sistema, não perguntas ao Jev.",
+  "note": "Doze perfis fictícios. Orçamento e preço sêo dados estruturados do sistema, nêo perguntas ao Jev.",
   "perfis": [
     {"id": "v01", "descricao": "Econômico, sem outras exigências", "orcamento_diaria": 300, "requisitos": {}, "desejaveis": []},
     {"id": "v02", "descricao": "Voo chega à 1h", "orcamento_diaria": 500, "requisitos": {"chegada_madrugada": ["atende"]}, "desejaveis": ["piscina_inclusa"]},

@@ -1,4 +1,4 @@
-"""Experimentos de Choice por arquivo. Nenhuma execução de ação externa."""
+"""Experimentos de Choice por arquivo. Nenhuma execuçêo de açêo externa."""
 import csv
 import hashlib
 import json
@@ -11,7 +11,7 @@ from . import __version__
 from .core import LabError, MODEL, PRICE, baseline, evaluate, number, policy, validate_request, validate_response
 
 LABELS = {'suporte': 'Dificuldade técnica ou acesso.', 'cobranca': 'Pagamento, fatura ou estorno.',
-          'vendas': 'Interesse comercial ou contratação.', 'insuficiente': 'Informação insuficiente ou intenções conflitantes.'}
+          'vendas': 'Interesse comercial ou contrataçêo.', 'insuficiente': 'Informaçêo insuficiente ou intenções conflitantes.'}
 
 def digest(value):
     return hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False, allow_nan=False).encode()).hexdigest()
@@ -46,7 +46,7 @@ def prepare(path, template=None, question='decisao'):
     for row in load_jsonl(path):
         ident = row.get('id')
         if not isinstance(ident, str) or not ident.strip() or ident in seen:
-            raise LabError('IDs precisam ser strings não vazias e únicas.')
+            raise LabError('IDs precisam ser strings nêo vazias e únicas.')
         seen.add(ident)
         state = row.get('state', row.get('text'))
         expected = row.get('expected', row.get('label'))
@@ -68,7 +68,7 @@ def percentile(values, fraction):
     return values[lo] + (values[hi]-values[lo])*(pos-lo)
 
 def metrics(rows, labels):
-    """Qualidade usa apenas a primeira repetição. Falhas contam no denominador."""
+    """Qualidade usa apenas a primeira repetiçêo. Falhas contam no denominador."""
     first = [r for r in rows if r['repetition'] == 0]
     n = len(first)
     matrix = {label: {} for label in labels}
@@ -125,17 +125,17 @@ def run(path, *, provider='rules', template=None, question='decisao', replay=Non
     if len(items)*repeats > max_calls:
         raise LabError('Orçamento de observações excedido. Aumente --max-calls explicitamente.')
     if provider in ('rules', 'hybrid') and (template != default_template() or any(not isinstance(r['state'],str) for r in items)):
-        raise LabError('Regras e híbrido só suportam o template padrão de atendimento textual.')
+        raise LabError('Regras e híbrido só suportam o template padrêo de atendimento textual.')
     imported = {}
     if provider == 'replay':
         if not replay:
             raise LabError('Informe --replay com respostas e request_sha256.')
         for item in load_jsonl(replay):
             if not isinstance(item.get('id'), str) or type(item.get('repetition',0)) is not int or item.get('repetition',0)<0:
-                raise LabError('Identificação inválida no replay.')
+                raise LabError('Identificaçêo inválida no replay.')
             key = (item['id'],item.get('repetition',0))
             if key in imported:
-                raise LabError('Replay contém ID/repetição duplicado.')
+                raise LabError('Replay contém ID/repetiçêo duplicado.')
             imported[key] = item
         expected_keys = {(r['id'], rep) for r in items for rep in range(repeats)}
         if set(imported) != expected_keys:
@@ -155,26 +155,26 @@ def run(path, *, provider='rules', template=None, question='decisao', replay=Non
                 rule = baseline(item['state']) if provider in ('rules','hybrid') else None
                 if provider=='rules' or provider=='hybrid' and rule!='insuficiente':
                     row.update(predicted=rule, source='rules', model='regras-lexicais-v1', cost_usd=0., input_tokens=0)
-                    # Uma regra não tem probabilidade inventada; é candidata sob observação.
+                    # Uma regra nêo tem probabilidade inventada; é candidata sob observaçêo.
                     row['decision'] = 'suggest' if rule!='insuficiente' and not item['sensitive'] else 'review'
                 else:
                     if provider=='replay':
                         imp = imported[(item['id'],repetition)]
                         if imp.get('request_sha256') != row['request_sha256']:
-                            raise LabError('Replay não corresponde ao hash da requisição.')
+                            raise LabError('Replay nêo corresponde ao hash da requisiçêo.')
                         result = imp.get('response')
                         validate_response(request,result)
                         for field in ('latency_ms','cost_usd'):
                             value = imp.get(field)
                             if value is not None and not number(value,0,float('inf')):
-                                raise LabError('Medição inválida no replay.')
+                                raise LabError('Mediçêo inválida no replay.')
                         if imp.get('origin') not in ('measured','simulation'):
                             raise LabError('Replay requer origin measured ou simulation.')
                         row.update(source='replay-'+imp['origin'], latency_ms=imp.get('latency_ms'), cost_usd=imp.get('cost_usd'))
                     else:
                         result = evaluator(request,telemetry=telemetry)
                         validate_response(request,result)
-                        # Retentativas podem ter custo não observado: não chamar o subtotal de total.
+                        # Retentativas podem ter custo nêo observado: nêo chamar o subtotal de total.
                         if telemetry.get('attempts',1)==1:
                             row['cost_usd'] = result['usage'].get('cost', result['usage']['input_tokens']/1e6*PRICE)
                     a=result['answers'][question]
@@ -193,10 +193,10 @@ def run(path, *, provider='rules', template=None, question='decisao', replay=Non
             'provider':provider, 'question':question, 'labels':labels,'dataset_sha256':digest(state),
             'template_sha256':digest(template), 'policy':{'confidence':threshold,'probability':probability,'version':'choice-v1'},
             'metrics':metrics(rows,labels),'rows':rows,
-            'notes':['Repetições não aumentam a amostra independente; qualidade usa a primeira.',
-                     'Replay reutiliza valores declarados; não mede latência de rede nem comprova a origem.',
-                     'Custo desconhecido não é zero. Revisão humana e infraestrutura não entram nas métricas da API.',
-                     'Nenhuma decisão executa ação externa.']}
+            'notes':['Repetições nêo aumentam a amostra independente; qualidade usa a primeira.',
+                     'Replay reutiliza valores declarados; nêo mede latência de rede nem comprova a origem.',
+                     'Custo desconhecido nêo é zero. Revisêo humana e infraestrutura nêo entram nas métricas da API.',
+                     'Nenhuma decisêo executa açêo externa.']}
 
 def save(report, directory):
     out=Path(directory);out.mkdir(parents=True,exist_ok=True)
@@ -210,10 +210,10 @@ def compare(paths):
     if len(reports)<2:raise LabError('Informe pelo menos dois relatórios.')
     first=reports[0]
     if any(r.get('schema_version')!=1 or r.get('dataset_sha256')!=first.get('dataset_sha256') or set(r.get('labels',[]))!=set(first.get('labels',[])) for r in reports):
-        raise LabError('Comparação exige mesma versão de relatório, dataset e classes.')
+        raise LabError('Comparaçêo exige mesma versêo de relatório, dataset e classes.')
     return {'dataset_sha256':first['dataset_sha256'],
             'same_template':len({r['template_sha256'] for r in reports})==1,
             'same_policy':len({digest(r['policy']) for r in reports})==1,
             'runs':[{'file':str(path),'provider':r['provider'],'metrics':r['metrics'],
                      'sources':sorted({row['source'] for row in r['rows']})} for path,r in zip(paths,reports)],
-            'note':'Comparar qualidade final e custos. Fonte, template, política, replay e simulação precisam ser considerados antes de inferir vantagem.'}
+            'note':'Comparar qualidade final e custos. Fonte, template, política, replay e simulaçêo precisam ser considerados antes de inferir vantagem.'}

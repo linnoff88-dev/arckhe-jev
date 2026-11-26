@@ -1,7 +1,7 @@
 {
   "id": "comunidades",
   "title": "Comunidades e cursos",
-  "objective": "Localizar pedidos de ajuda e insatisfação expressa.",
+  "objective": "Localizar pedidos de ajuda e insatisfaçêo expressa.",
   "sensitive": false,
   "expected": "ajuda",
   "expected_answers": {
@@ -11,8 +11,8 @@
     "saida_explicita": false,
     "clareza": 1
   },
-  "integration_point": "Após a entrada de uma publicação ou dúvida no ambiente de aprendizagem.",
-  "suggested_use": "Sugerir acompanhamento humano. Insatisfação não equivale a previsão de abandono; não inferir atributos pessoais.",
+  "integration_point": "Após a entrada de uma publicaçêo ou dúvida no ambiente de aprendizagem.",
+  "suggested_use": "Sugerir acompanhamento humano. Insatisfaçêo nêo equivale a previsêo de abandono; nêo inferir atributos pessoais.",
   "fixture_origin": "simulation",
   "fixture_request_sha256": "18ad10d6789522ee6b2afad9841283ede175713c85c76026d0621eda215925a3"
 }

@@ -1,7 +1,7 @@
 """Cruza respostas Choice de um item com perfis: o Jev extrai, a regra decide.
 
-Cada item é avaliado uma vez; o custo cresce com os itens, não com itens × perfis.
-Respostas em revisão nunca viram compatibilidade: o perfil fica em `revisar`.
+Cada item é avaliado uma vez; o custo cresce com os itens, nêo com itens × perfis.
+Respostas em revisêo nunca viram compatibilidade: o perfil fica em `revisar`.
 """
 import argparse
 import json
@@ -14,13 +14,13 @@ from .integracao import AREAS, carregar, demonstrar
 def cruzar(request, resultado, perfis, *, preco=None):
     """Compara o resultado validado de `demonstrar`/`avaliar_area` com os perfis.
 
-    `preco` é dado estruturado do sistema chamador, não resposta do modelo.
+    `preco` é dado estruturado do sistema chamador, nêo resposta do modelo.
     Retorna um status por perfil: compativel, incompativel ou revisar.
     """
     if resultado.get('error') or not resultado.get('response'):
-        raise LabError('Resultado sem resposta válida: encaminhe o item para revisão.')
+        raise LabError('Resultado sem resposta válida: encaminhe o item para revisêo.')
     if preco is not None and not number(preco, 0, 1e9):
-        raise LabError('Preço deve ser número não negativo.')
+        raise LabError('Preço deve ser número nêo negativo.')
     questions = request['questions']
     answers = resultado['response']['answers']
     decisions = resultado['decisions']
@@ -38,7 +38,7 @@ def cruzar(request, resultado, perfis, *, preco=None):
         for key, aceitos in requisitos.items():
             q = questions.get(key)
             if not q or q['type'] != 'choice':
-                raise LabError(f'Perfil {pid}: requisito {key!r} não é pergunta Choice do pacote.')
+                raise LabError(f'Perfil {pid}: requisito {key!r} nêo é pergunta Choice do pacote.')
             if not isinstance(aceitos, list) or not aceitos or not set(aceitos) <= set(q['criteria']):
                 raise LabError(f'Perfil {pid}: rótulos aceitos inválidos em {key!r}.')
             if decisions[key]['action'] != 'suggest':
@@ -53,7 +53,7 @@ def cruzar(request, resultado, perfis, *, preco=None):
                 motivos.append(f'preco {preco} > orcamento {orcamento}')
         for key in desejaveis:
             if key not in questions:
-                raise LabError(f'Perfil {pid}: desejável {key!r} não existe no pacote.')
+                raise LabError(f'Perfil {pid}: desejável {key!r} nêo existe no pacote.')
         extras = [k for k in desejaveis if decisions[k]['action'] == 'suggest' and answers[k].get('choice') == 'atende']
         status = 'incompativel' if motivos else 'revisar' if pendentes else 'compativel'
         saida.append({'id': pid, 'status': status, 'motivos': motivos, 'pendentes': pendentes, 'desejaveis_atendidos': extras})
@@ -63,7 +63,7 @@ def cruzar(request, resultado, perfis, *, preco=None):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('area', nargs='?', default='viagens')
-    parser.add_argument('--perfis', type=Path, help='JSON com a chave "perfis"; padrão: perfis.json do pacote.')
+    parser.add_argument('--perfis', type=Path, help='JSON com a chave "perfis"; padrêo: perfis.json do pacote.')
     parser.add_argument('--preco', type=float, help='Preço da diária vindo do seu sistema.')
     args = parser.parse_args()
     try:

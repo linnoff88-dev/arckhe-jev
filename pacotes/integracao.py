@@ -1,4 +1,4 @@
-"""Entrada reutilizável para os pacotes. Sem execução de ações externas."""
+"""Entrada reutilizável para os pacotes. Sem execuçêo de ações externas."""
 import hashlib
 import json
 from pathlib import Path
@@ -36,9 +36,9 @@ def _executar(area, meta, request, evaluator, origin):
 
 
 def avaliar_area(area, state, *, evaluator=evaluate, provider=None):
-    """Consulta real por padrão; passe evaluator para testes controlados.
+    """Consulta real por padrêo; passe evaluator para testes controlados.
 
-    Preserve o evento original no seu sistema. Falhas esperadas retornam revisão.
+    Preserve o evento original no seu sistema. Falhas esperadas retornam revisêo.
     state substitui todo o contexto: inclua briefing, rubrica ou catálogo exigido.
     """
     _, meta, request = carregar(area)
@@ -46,7 +46,7 @@ def avaliar_area(area, state, *, evaluator=evaluate, provider=None):
     origin = 'api' if evaluator is evaluate else 'controlled'
     if provider is not None:
         if evaluator is not evaluate:
-            raise LabError('Use provider ou evaluator controlado, não ambos.')
+            raise LabError('Use provider ou evaluator controlado, nêo ambos.')
         evaluator = lambda payload: evaluate(payload, provider=provider)
     return _executar(area, meta, request, evaluator, origin)
 
@@ -54,6 +54,6 @@ def avaliar_area(area, state, *, evaluator=evaluate, provider=None):
 def demonstrar(area):
     root, meta, request = carregar(area)
     if fingerprint(request) != meta.get('fixture_request_sha256'):
-        raise LabError('O request foi alterado. A fixture original não pode demonstrar este contexto.')
+        raise LabError('O request foi alterado. A fixture original nêo pode demonstrar este contexto.')
     fixture = json.loads((root/'fixture.json').read_text(encoding='utf-8'))
     return _executar(area, meta, request, lambda _: fixture, 'simulation')

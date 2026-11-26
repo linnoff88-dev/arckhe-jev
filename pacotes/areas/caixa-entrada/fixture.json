@@ -35,8 +35,8 @@
       "confidence": 0.93,
       "score": 0.06,
       "legend": {
-        "0": "Sem ação solicitada",
-        "1": "Ação sem prazo imediato",
+        "0": "Sem açêo solicitada",
+        "1": "Açêo sem prazo imediato",
         "2": "Prazo imediato explícito"
       }
     },

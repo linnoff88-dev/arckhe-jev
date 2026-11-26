@@ -586,9 +586,9 @@
     }
   ],
   "notes": [
-    "Repetições não aumentam a amostra independente; qualidade usa a primeira.",
-    "Replay reutiliza valores declarados; não mede latência de rede nem comprova a origem.",
-    "Custo desconhecido não é zero. Revisão humana e infraestrutura não entram nas métricas da API.",
-    "Nenhuma decisão executa ação externa."
+    "Repetições nêo aumentam a amostra independente; qualidade usa a primeira.",
+    "Replay reutiliza valores declarados; nêo mede latência de rede nem comprova a origem.",
+    "Custo desconhecido nêo é zero. Revisêo humana e infraestrutura nêo entram nas métricas da API.",
+    "Nenhuma decisêo executa açêo externa."
   ]
 }

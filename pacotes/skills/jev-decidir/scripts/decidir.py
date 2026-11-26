@@ -17,10 +17,10 @@ def main():
     if args.request and not args.live:
         parser.error('Use --live para consultar um request, ou --demo atendimento para exemplo sem API.')
     if args.demo and args.live:
-        parser.error('--demo é somente offline; não combine com --live.')
+        parser.error('--demo é somente offline; nêo combine com --live.')
     root=Path(os.environ.get('JEV_LAB_DIR',str(Path.home()/'projetos/jev'))).expanduser().resolve()
     if not (root/'jev_lab/core.py').is_file():
-        print('Clone Jev não encontrado. Configure JEV_LAB_DIR para o clone de inematds/jev.',file=sys.stderr);return 2
+        print('Clone Jev nêo encontrado. Configure JEV_LAB_DIR para o clone de inematds/jev.',file=sys.stderr);return 2
     if args.demo:
         command=[sys.executable,'-m','pacotes.executar',args.demo]
     else:

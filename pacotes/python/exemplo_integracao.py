@@ -9,7 +9,7 @@ def decidir(request, *, sensitive=False, evaluator=evaluate):
     """Recebe um request e devolve a resposta com encaminhamento por pergunta.
 
     evaluator pode ser substituído por um provedor controlado em testes.
-    O resultado é uma sugestão; o sistema chamador conserva suas permissões.
+    O resultado é uma sugestêo; o sistema chamador conserva suas permissões.
     """
     validate_request(request)
     response = evaluator(request)

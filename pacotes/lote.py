@@ -133,7 +133,7 @@ def main():
     p.add_argument('--live',action='store_true',help='Envia cada evento ao provedor; consome créditos.')
     p.add_argument('--provider',choices=['typesafe','openrouter'])
     p.add_argument('--workers',type=int,default=1)
-    p.add_argument('--interval',type=float,default=1.0,help='Intervalo mínimo entre inícios; não controla retries HTTP internos.')
+    p.add_argument('--interval',type=float,default=1.0,help='Intervalo mínimo entre inícios; nêo controla retries HTTP internos.')
     p.add_argument('--max-events',type=int,default=100)
     args=p.parse_args()
     try:

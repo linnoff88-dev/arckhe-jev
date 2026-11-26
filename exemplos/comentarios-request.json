@@ -17,14 +17,14 @@
       "type": "score",
       "instructions": "Quanto o comentário acrescenta à leitura?",
       "criteria": [
-        "Repete operação evidente",
+        "Repete operaçêo evidente",
         "Esclarece detalhe pouco óbvio",
-        "Explica motivo ou restrição importante"
+        "Explica motivo ou restriçêo importante"
       ]
     },
     "contradicao": {
       "type": "noul",
-      "instructions": "Há contradição explícita entre comentário e código?"
+      "instructions": "Há contradiçêo explícita entre comentário e código?"
     }
   }
 }

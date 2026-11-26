@@ -12,7 +12,7 @@
     "utilidade_textual": 2
   },
   "integration_point": "Após importar publicações por um mecanismo autorizado.",
-  "suggested_use": "Sugerir leitura; não comprova notícia, autoria humana ou geração por IA. Sem extensão, scraping ou moderação automática.",
+  "suggested_use": "Sugerir leitura; nêo comprova notícia, autoria humana ou geraçêo por IA. Sem extensêo, scraping ou moderaçêo automática.",
   "fixture_origin": "simulation",
   "fixture_request_sha256": "3564fea1c7560e5d51d967091e2a487399ad2cac9091329ff0db8a710853bace"
 }

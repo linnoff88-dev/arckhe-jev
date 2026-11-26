@@ -107,27 +107,27 @@ components:
 
 ## Overview
 
-O mundo visual estabelecido é o padrão INEMA dark âmbar, com tema claro alternativo e identificação INEMA.CLUB em azul. Esta documentação registra o código existente em `app/app.css`, `app/index.html` e `guia/index.html`; não representa aprovação estética de uma proposta nova.
+O mundo visual estabelecido é o padrêo INEMA dark âmbar, com tema claro alternativo e identificaçêo INEMA.CLUB em azul. Esta documentaçêo registra o código existente em `app/app.css`, `app/index.html` e `guia/index.html`; nêo representa aprovaçêo estética de uma proposta nova.
 
-O aplicativo usa o modo **Operate**: navegação por casos, edição e resultado na mesma área de trabalho. O guia usa **Read/Persuade**: apresentação ilustrada, explicação e passos de instalação. Essa diferença de composição preserva a identidade compartilhada sem substituir o template do guia pela interface operacional.
+O aplicativo usa o modo **Operate**: navegaçêo por casos, ediçêo e resultado na mesma área de trabalho. O guia usa **Read/Persuade**: apresentaçêo ilustrada, explicaçêo e passos de instalaçêo. Essa diferença de composiçêo preserva a identidade compartilhada sem substituir o template do guia pela interface operacional.
 
-Características recorrentes: fundos escuros, superfícies delimitadas por bordas, âmbar nas ações e tema claro explícito. O caráter educacional permanece visível nos avisos de simulação e nos rótulos de resultados.
+Características recorrentes: fundos escuros, superfícies delimitadas por bordas, âmbar nas ações e tema claro explícito. O caráter educacional permanece visível nos avisos de simulaçêo e nos rótulos de resultados.
 
 ## Colors
 
 O frontmatter contém os valores normativos extraídos, separados por superfície e tema. No CSS, a classe `light` no `body` troca os papéis sem mudar a estrutura.
 
-- **Primária:** âmbar orienta ações, links e destaques. No app, o botão principal troca fundo e texto no tema claro. No guia, o preenchimento dos botões e números dos passos conserva o âmbar original através de `--amb-fill`, enquanto links usam o âmbar escuro do tema claro.
+- **Primária:** âmbar orienta ações, links e destaques. No app, o botêo principal troca fundo e texto no tema claro. No guia, o preenchimento dos botões e números dos passos conserva o âmbar original através de `--amb-fill`, enquanto links usam o âmbar escuro do tema claro.
 - **Secundária:** azul identifica INEMA.CLUB. O link PRO tem cor própria no guia.
-- **Neutras:** fundo, painel/cartão, texto, texto secundário e bordas têm tokens distintos. O guia acrescenta uma segunda superfície de fundo.
+- **Neutras:** fundo, painel/cartêo, texto, texto secundário e bordas têm tokens distintos. O guia acrescenta uma segunda superfície de fundo.
 
-A última declaração de âmbar claro no guia é a efetiva; preservar a cascata ao editar. Não inferir estados de erro ou sucesso pela cor: a interface informa estados com texto.
+A última declaraçêo de âmbar claro no guia é a efetiva; preservar a cascata ao editar. Nêo inferir estados de erro ou sucesso pela cor: a interface informa estados com texto.
 
 ## Typography
 
-O app usa a pilha de sistema em títulos e corpo; código usa monoespaçada. Seu título principal tem largura máxima de 22 caracteres, títulos de seção usam 1,5rem e parágrafos têm limite de 78 caracteres.
+O app usa a pilha de sistema em títulos e corpo; código usa monoespaçada. Seu título principal tem largura máxima de 22 caracteres, títulos de seçêo usam 1,5rem e parágrafos têm limite de 78 caracteres.
 
-O guia combina Sora para títulos e botões, Inter para leitura e JetBrains Mono para código, com fallbacks declarados. As fontes do guia são carregadas pelo Google Fonts. Títulos de seção variam entre 1,5rem e 2,1rem; a abertura usa o display do frontmatter. O texto de apresentação fica em 1,18rem com limite de 34 caracteres e subtítulos de seção em até 62 caracteres.
+O guia combina Sora para títulos e botões, Inter para leitura e JetBrains Mono para código, com fallbacks declarados. As fontes do guia sêo carregadas pelo Google Fonts. Títulos de seçêo variam entre 1,5rem e 2,1rem; a abertura usa o display do frontmatter. O texto de apresentaçêo fica em 1,18rem com limite de 34 caracteres e subtítulos de seçêo em até 62 caracteres.
 
 A hierarquia vem de tamanho, peso e espaço. Conteúdo técnico mantém fonte monoespaçada e rolagem horizontal quando necessário.
 
@@ -135,36 +135,36 @@ A hierarquia vem de tamanho, peso e espaço. Conteúdo técnico mantém fonte mo
 
 No app, o cabeçalho tem limite de 1440px e a área principal de 1380px, com recuo horizontal de 32px. A área de trabalho combina coluna de casos de 245px e editor flexível, separados por 42px. A calculadora dispõe quatro colunas. Abaixo de 800px, a área passa a uma coluna, os casos e a calculadora usam duas colunas, o recuo diminui para 20px e os botões podem ocupar a linha disponível.
 
-No guia, o conteúdo tem largura máxima de 1160px e recuo de 22px. O hero tem duas colunas proporcionais, intervalo de 40px e recuo vertical de 74px; abaixo de 780px passa a uma coluna com 48px verticais. Seções têm 62px verticais. Grades usam intervalo de 16px, reduzem a duas colunas abaixo de 820px e uma abaixo de 540px. Os links de seção da navegação são ocultados abaixo de 760px; os demais controles quebram linha.
+No guia, o conteúdo tem largura máxima de 1160px e recuo de 22px. O hero tem duas colunas proporcionais, intervalo de 40px e recuo vertical de 74px; abaixo de 780px passa a uma coluna com 48px verticais. Seções têm 62px verticais. Grades usam intervalo de 16px, reduzem a duas colunas abaixo de 820px e uma abaixo de 540px. Os links de seçêo da navegaçêo sêo ocultados abaixo de 760px; os demais controles quebram linha.
 
 Passos do guia reservam 46px para o número e deixam o texto encolher com `minmax(0,1fr)`. Blocos de código possuem rolagem própria. Esses comportamentos protegem a leitura em telas estreitas.
 
 ## Elevation & Depth
 
-O app é plano: painéis, bordas e mudanças tonais separam regiões, sem sombras decorativas. O guia preserva o brilho radial âmbar do hero e a sombra da imagem principal (`0 30px 80px -30px #000`). A navegação fixa do guia usa desfoque de 12px e fundo translúcido no escuro; o tema claro aplica fundo sólido. Cartões permanecem sem sombra.
+O app é plano: painéis, bordas e mudanças tonais separam regiões, sem sombras decorativas. O guia preserva o brilho radial âmbar do hero e a sombra da imagem principal (`0 30px 80px -30px #000`). A navegaçêo fixa do guia usa desfoque de 12px e fundo translúcido no escuro; o tema claro aplica fundo sólido. Cartões permanecem sem sombra.
 
 ## Shapes
 
-Controles do app são discretamente arredondados; avisos e código usam o raio de aviso. No guia, botões, código, cartões e imagem principal possuem raios progressivamente maiores conforme o frontmatter. Etapas do fluxo e etiquetas do rodapé usam formato de cápsula. Bordas finas de 1px delimitam controles e superfícies.
+Controles do app sêo discretamente arredondados; avisos e código usam o raio de aviso. No guia, botões, código, cartões e imagem principal possuem raios progressivamente maiores conforme o frontmatter. Etapas do fluxo e etiquetas do rodapé usam formato de cápsula. Bordas finas de 1px delimitam controles e superfícies.
 
 ## Components
 
 - **Botões do app:** principal em âmbar e demais em superfície de painel. Hover destaca a borda em âmbar. Estado desabilitado reduz a opacidade para 0,5 e muda o cursor. Ações quebram linha quando falta espaço.
-- **Seleção de caso:** lista de botões alinhados à esquerda. `aria-current=true` aplica painel, borda, texto âmbar e peso 700; o estado também é programático.
-- **Campos:** rótulos associados, fundo de painel, borda e preenchimento de 14px. Textareas permitem redimensionamento vertical. Dicas explicam a consequência da edição. Não há um componente visual separado de erro de campo documentado no CSS atual.
-- **Resultado:** região inicialmente oculta, barras âmbar com rótulo e valor textual, controle de limiar e aviso de decisão. O status tem `role=status` e `aria-live=polite`. A consulta local permanece oculta até ser disponibilizada pelo ambiente.
-- **Requisição:** expansão nativa com `details`/`summary` e JSON monoespaçado em bloco rolável.
-- **Navegação e tema:** o app apresenta links e botão textual de tema; o guia mantém navegação fixa e botão com ícone e nome acessível. Os dois oferecem o tema claro alternativo.
-- **Guia:** cartões de conteúdo, botões principal/secundário, etapas numeradas, fluxo em cápsulas e linhas de roadmap seguem o template existente. Não há diálogo modal implementado.
+- **Seleçêo de caso:** lista de botões alinhados à esquerda. `aria-current=true` aplica painel, borda, texto âmbar e peso 700; o estado também é programático.
+- **Campos:** rótulos associados, fundo de painel, borda e preenchimento de 14px. Textareas permitem redimensionamento vertical. Dicas explicam a consequência da ediçêo. Nêo há um componente visual separado de erro de campo documentado no CSS atual.
+- **Resultado:** regiêo inicialmente oculta, barras âmbar com rótulo e valor textual, controle de limiar e aviso de decisêo. O status tem `role=status` e `aria-live=polite`. A consulta local permanece oculta até ser disponibilizada pelo ambiente.
+- **Requisiçêo:** expansêo nativa com `details`/`summary` e JSON monoespaçado em bloco rolável.
+- **Navegaçêo e tema:** o app apresenta links e botêo textual de tema; o guia mantém navegaçêo fixa e botêo com ícone e nome acessível. Os dois oferecem o tema claro alternativo.
+- **Guia:** cartões de conteúdo, botões principal/secundário, etapas numeradas, fluxo em cápsulas e linhas de roadmap seguem o template existente. Nêo há diálogo modal implementado.
 
-Acessibilidade presente: idioma pt-BR, títulos estruturados, rótulos, texto alternativo na imagem do guia e foco visível âmbar de 3px com afastamento de 4px. O app acrescenta atalho para pular ao laboratório e nomes para navegações. Ambos respeitam preferência de movimento reduzido ao tratar rolagem; não há animação necessária para operar. Estes são recursos observados, não uma declaração de conformidade integral.
+Acessibilidade presente: idioma pt-BR, títulos estruturados, rótulos, texto alternativo na imagem do guia e foco visível âmbar de 3px com afastamento de 4px. O app acrescenta atalho para pular ao laboratório e nomes para navegações. Ambos respeitam preferência de movimento reduzido ao tratar rolagem; nêo há animaçêo necessária para operar. Estes sêo recursos observados, nêo uma declaraçêo de conformidade integral.
 
 ## Do's and Don'ts
 
 - **Do** preservar os pares de tokens escuro/claro e verificar ambos após alterações.
-- **Do** manter contexto, ações e resultado próximos no app, com avisos textuais distinguindo simulação e consulta real.
+- **Do** manter contexto, ações e resultado próximos no app, com avisos textuais distinguindo simulaçêo e consulta real.
 - **Do** preservar o template e a hierarquia de leitura do guia.
-- **Do** manter foco visível, rótulos, seleção programática e anúncios de status.
+- **Do** manter foco visível, rótulos, seleçêo programática e anúncios de status.
 - **Don't** transformar exemplos ou barras simuladas em evidência de benchmark real.
-- **Don't** depender apenas de cor para explicar o estado ou a decisão.
-- **Don't** substituir a identidade INEMA, introduzir componentes inexistentes como regras consolidadas ou tratar esta extração como aprovação estética.
+- **Don't** depender apenas de cor para explicar o estado ou a decisêo.
+- **Don't** substituir a identidade INEMA, introduzir componentes inexistentes como regras consolidadas ou tratar esta extraçêo como aprovaçêo estética.

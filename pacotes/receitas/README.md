@@ -1,14 +1,14 @@
 # Receitas para adaptar ao trabalho
 
-Os templates são mantidos em uma única pasta: [`exemplos/`](../../exemplos/). Substitua o `state` pelos dados necessários, ajuste os critérios e valide antes de consultar.
+Os templates sêo mantidos em uma única pasta: [`exemplos/`](../../exemplos/). Substitua o `state` pelos dados necessários, ajuste os critérios e valide antes de consultar.
 
 | Receita | Template | Como incorporar |
 |---|---|---|
 | Triagem de atendimento | [Triagem composta](../../exemplos/triagem-composta-request.json) | Sugere fila, urgência e suficiência; seu sistema decide o encaminhamento |
 | Escolha entre skills | [Skills](../../exemplos/skills-request.json) | Recebe pedido e catálogo de candidatos; sugere a skill sem executá-la |
-| Seleção de evidências | [Evidências](../../exemplos/evidencias-request.json) | Ajuda a filtrar trechos antes da geração de uma resposta |
-| Revisão de comentários | [Comentários](../../exemplos/comentarios-request.json) | Avalia comentários por rubrica para apoiar revisão |
-| Revisão de alteração de código | [Diff](../../exemplos/diff-request.json) | Produz sinais de revisão, sem aprovar ou fazer merge |
+| Seleçêo de evidências | [Evidências](../../exemplos/evidencias-request.json) | Ajuda a filtrar trechos antes da geraçêo de uma resposta |
+| Revisêo de comentários | [Comentários](../../exemplos/comentarios-request.json) | Avalia comentários por rubrica para apoiar revisêo |
+| Revisêo de alteraçêo de código | [Diff](../../exemplos/diff-request.json) | Produz sinais de revisêo, sem aprovar ou fazer merge |
 | Intenções simultâneas | [Multirrótulos](../../exemplos/multirrotulos-request.json) | Faz perguntas independentes sobre o mesmo contexto |
 
 Na raiz do clone:
@@ -21,10 +21,10 @@ python3 -m jev_lab validate exemplos/skills-request.json
 python3 -m jev_lab ask exemplos/skills-request.json
 ```
 
-Para comparar resultados com uma referência humana, siga [Experimentos](../../docs/08-experimentos.md). O avaliador em lote atual tem uma pergunta Choice como alvo; não calcula automaticamente a qualidade conjunta de todas as perguntas de um template composto.
+Para comparar resultados com uma referência humana, siga [Experimentos](../../docs/08-experimentos.md). O avaliador em lote atual tem uma pergunta Choice como alvo; nêo calcula automaticamente a qualidade conjunta de todas as perguntas de um template composto.
 
-**Estado:** templates reutilizáveis, sem conectores prontos de CRM, help desk ou orquestradores. Cada template contém dados fictícios; os resultados reais dependem do provedor e da avaliação no domínio de destino.
+**Estado:** templates reutilizáveis, sem conectores prontos de CRM, help desk ou orquestradores. Cada template contém dados fictícios; os resultados reais dependem do provedor e da avaliaçêo no domínio de destino.
 
 ## Novas receitas com várias perguntas
 
-Caixa de entrada, comentários do YouTube, comunidades, reuniões, cortes por transcrição, notas e curadoria estão nos [17 pacotes](../areas/README.md). Há também [executor de lotes e avaliação por pergunta](../../docs/11-fluxos-praticos.md).
+Caixa de entrada, comentários do YouTube, comunidades, reuniões, cortes por transcriçêo, notas e curadoria estêo nos [17 pacotes](../areas/README.md). Há também [executor de lotes e avaliaçêo por pergunta](../../docs/11-fluxos-praticos.md).

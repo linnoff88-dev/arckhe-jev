@@ -21,6 +21,6 @@ class Composite(unittest.TestCase):
         with self.assertRaises(LabError):compor(self.request,self.response,{'relevancia':1})
     def test_preserve_inputs_and_require_score(self):
         before=deepcopy(self.response);compor(self.request,self.response,{'relevancia':1});self.assertEqual(before,self.response)
-        self.request['questions']['urgencia']={'type':'noul','instructions':'Urgente?','criteria':{'true':'Urgente','false':'Não urgente'}}
+        self.request['questions']['urgencia']={'type':'noul','instructions':'Urgente?','criteria':{'true':'Urgente','false':'Nêo urgente'}}
         self.response['answers']['urgencia']={'type':'noul','noul':.8}
         with self.assertRaises(LabError):compor(self.request,self.response,{'urgencia':1})

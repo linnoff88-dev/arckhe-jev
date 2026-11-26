@@ -3,7 +3,7 @@
   "kind": "integration-smoke-test",
   "provider": "openrouter",
   "requested_model": "~typesafe/jev-latest",
-  "note": "Dados fictícios dos exemplos publicados. Uma chamada por área, sem conjunto independente. Confirma integração; não estima qualidade geral ou calibração. Latência inclui rede deste ambiente.",
+  "note": "Dados fictícios dos exemplos publicados. Uma chamada por área, sem conjunto independente. Confirma integraçêo; nêo estima qualidade geral ou calibraçêo. Latência inclui rede deste ambiente.",
   "completed": 10,
   "errors": 0,
   "matches_example": 10,
@@ -41,7 +41,7 @@
         "decisions": {
           "decisao": {
             "action": "suggest",
-            "reason": "Sugestão em observação. Nenhuma ação externa executada."
+            "reason": "Sugestêo em observaçêo. Nenhuma açêo externa executada."
           }
         },
         "area": "agentes",
@@ -83,7 +83,7 @@
         "decisions": {
           "decisao": {
             "action": "suggest",
-            "reason": "Sugestão em observação. Nenhuma ação externa executada."
+            "reason": "Sugestêo em observaçêo. Nenhuma açêo externa executada."
           }
         },
         "area": "atendimento",
@@ -124,7 +124,7 @@
         "decisions": {
           "decisao": {
             "action": "suggest",
-            "reason": "Sugestão em observação. Nenhuma ação externa executada."
+            "reason": "Sugestêo em observaçêo. Nenhuma açêo externa executada."
           }
         },
         "area": "documentos",
@@ -167,7 +167,7 @@
         "decisions": {
           "decisao": {
             "action": "suggest",
-            "reason": "Sugestão em observação. Nenhuma ação externa executada."
+            "reason": "Sugestêo em observaçêo. Nenhuma açêo externa executada."
           }
         },
         "area": "ecommerce",
@@ -209,7 +209,7 @@
         "decisions": {
           "decisao": {
             "action": "review",
-            "reason": "Domínio supervisionado: revisão humana obrigatória."
+            "reason": "Domínio supervisionado: revisêo humana obrigatória."
           }
         },
         "area": "educacao",
@@ -250,7 +250,7 @@
         "decisions": {
           "decisao": {
             "action": "review",
-            "reason": "A alternativa requer revisão ou mais informação."
+            "reason": "A alternativa requer revisêo ou mais informaçêo."
           }
         },
         "area": "marketing",
@@ -292,7 +292,7 @@
         "decisions": {
           "decisao": {
             "action": "suggest",
-            "reason": "Sugestão em observação. Nenhuma ação externa executada."
+            "reason": "Sugestêo em observaçêo. Nenhuma açêo externa executada."
           }
         },
         "area": "operacoes",
@@ -333,7 +333,7 @@
         "decisions": {
           "decisao": {
             "action": "suggest",
-            "reason": "Sugestão em observação. Nenhuma ação externa executada."
+            "reason": "Sugestêo em observaçêo. Nenhuma açêo externa executada."
           }
         },
         "area": "pesquisa",
@@ -375,7 +375,7 @@
         "decisions": {
           "decisao": {
             "action": "suggest",
-            "reason": "Sugestão em observação. Nenhuma ação externa executada."
+            "reason": "Sugestêo em observaçêo. Nenhuma açêo externa executada."
           }
         },
         "area": "software",
@@ -417,7 +417,7 @@
         "decisions": {
           "decisao": {
             "action": "suggest",
-            "reason": "Sugestão em observação. Nenhuma ação externa executada."
+            "reason": "Sugestêo em observaçêo. Nenhuma açêo externa executada."
           }
         },
         "area": "vendas",

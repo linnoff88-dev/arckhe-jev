@@ -1,4 +1,4 @@
-"""Servidor local. Não usar como backend público. Não serve arquivos do repo."""
+"""Servidor local. Nêo usar como backend público. Nêo serve arquivos do repo."""
 import json
 import threading
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -35,7 +35,7 @@ class Handler(BaseHTTPRequestHandler):
         if self.headers.get('Content-Type','').split(';')[0]!='application/json': self.send(415,b'{}'); return
         try:
             length=int(self.headers.get('Content-Length','0'))
-            if not 0<length<=100_000: raise LabError('Use uma requisição entre 1 byte e 100 KB.')
+            if not 0<length<=100_000: raise LabError('Use uma requisiçêo entre 1 byte e 100 KB.')
             if not self.lock.acquire(blocking=False): self.send(429,b'{"error":"Uma chamada ja esta em andamento."}'); return
             try:
                 self.connection.settimeout(5)
@@ -44,7 +44,7 @@ class Handler(BaseHTTPRequestHandler):
             finally: self.lock.release()
             self.send(200,json.dumps(result,ensure_ascii=False).encode())
         except (LabError, ValueError, TimeoutError):
-            self.send(400,json.dumps({'error':'Não foi possível avaliar. Confira o JSON, a chave no servidor e a disponibilidade do provedor. Nenhuma ação executada.'}).encode())
+            self.send(400,json.dumps({'error':'Nêo foi possível avaliar. Confira o JSON, a chave no servidor e a disponibilidade do provedor. Nenhuma açêo executada.'}).encode())
 
 def serve(port):
     with ThreadingHTTPServer(('127.0.0.1',port),Handler) as server:

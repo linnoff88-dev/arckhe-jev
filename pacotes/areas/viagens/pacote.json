@@ -13,7 +13,7 @@
     "piscina_acessivel": "insuficiente"
   },
   "integration_point": "Ao cadastrar ou atualizar um anúncio de hospedagem.",
-  "suggested_use": "Guardar as respostas do anúncio e cruzar com perfis por regra (pacotes.cruzamento). Atributos em revisão deixam o perfil em revisar; nada é reservado ou recomendado automaticamente.",
+  "suggested_use": "Guardar as respostas do anúncio e cruzar com perfis por regra (pacotes.cruzamento). Atributos em revisêo deixam o perfil em revisar; nada é reservado ou recomendado automaticamente.",
   "fixture_origin": "simulation",
   "fixture_request_sha256": "9e1b594b0f4f04822fa9c14be627ce5cfcad8e6454483f679549a4ac1965e589"
 }

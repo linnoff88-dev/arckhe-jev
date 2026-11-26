@@ -1,6 +1,6 @@
 {
   "date": "2026-09-19T05:52:35.024346+00:00",
-  "note": "Teste dos scripts instalados em diretório independente. Mesmo exemplo fictício nas duas variantes. Não avalia seleção automática da skill pelo agente nem qualidade geral do modelo.",
+  "note": "Teste dos scripts instalados em diretório independente. Mesmo exemplo fictício nas duas variantes. Nêo avalia seleçêo automática da skill pelo agente nem qualidade geral do modelo.",
   "rows": [
     {
       "runtime_package": "codex",

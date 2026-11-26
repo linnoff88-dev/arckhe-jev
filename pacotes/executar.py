@@ -1,4 +1,4 @@
-"""Executor comum: exemplos offline e integração explícita à API."""
+"""Executor comum: exemplos offline e integraçêo explícita à API."""
 import argparse
 import json
 import sys
